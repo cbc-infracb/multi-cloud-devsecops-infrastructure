@@ -1,0 +1,29 @@
+# Project Configuration
+project_name  = "devsecops"
+environment   = "dev"
+location      = "East US"
+business_unit = "Engineering"
+cost_center   = "1000"
+owner_email   = "admin@company.com"
+
+# Network Configuration
+vnet_address_space              = ["10.0.0.0/16"]
+aks_subnet_cidr                = "10.0.1.0/24"
+private_endpoints_subnet_cidr  = "10.0.2.0/24"
+appgw_subnet_cidr              = "10.0.3.0/24"
+
+# Container Registry Configuration
+acr_sku = "Premium"
+
+# AKS Configuration
+aks_default_node_pool_vm_size    = "Standard_D2s_v3"
+aks_default_node_pool_count      = 3
+aks_default_node_pool_min_count  = 1
+aks_default_node_pool_max_count  = 10
+aks_availability_zones           = ["1", "2", "3"]
+
+# Monitoring Configuration
+log_retention_days = 30
+
+# Security Configuration
+enable_sentinel = false
