@@ -1,0 +1,32 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+terraform.tfplan
+.terraformrc
+terraform.rc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+service-account.json
+
+# Logs
+*.log
