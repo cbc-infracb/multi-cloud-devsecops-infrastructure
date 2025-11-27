@@ -1,0 +1,37 @@
+# Project Configuration
+project_name  = "devsecops"
+environment   = "dev"
+aws_region    = "us-east-1"
+business_unit = "Engineering"
+cost_center   = "1000"
+owner_email   = "admin@company.com"
+
+# Network Configuration
+vpc_cidr                = "10.0.0.0/16"
+private_subnet_cidrs    = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+public_subnet_cidrs     = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+database_subnet_cidrs   = ["10.0.201.0/24", "10.0.202.0/24", "10.0.203.0/24"]
+
+# EKS Configuration
+eks_cluster_version          = "1.28"
+eks_node_instance_type      = "t3.medium"
+eks_node_group_min_size     = 1
+eks_node_group_max_size     = 10
+eks_node_group_desired_size = 3
+
+# ECR Configuration
+ecr_repositories = ["web-app", "api-service", "worker"]
+
+# RDS Configuration
+rds_instance_class      = "db.t3.micro"
+rds_allocated_storage   = 20
+rds_max_allocated_storage = 1000
+db_username             = "dbadmin"
+db_password             = "changeme123!"
+
+# Domain Configuration (optional)
+domain_name      = ""
+route53_zone_id  = ""
+
+# Monitoring Configuration
+notification_email = "admin@company.com"
